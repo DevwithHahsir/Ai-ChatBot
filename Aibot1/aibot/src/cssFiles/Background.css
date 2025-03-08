@@ -1,0 +1,20 @@
+body {
+    background-color:#03091d;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.background-container {
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    top: 10;
+    left: 0;
+    
+}
+
+.foreground-content {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,189 @@
+.hero-container {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 90vh;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  width: 100%;
+
+
+}
+
+.conversation-container {
+  /* border: 1px solid white; */
+  margin-bottom: 3rem;
+  position: relative;
+
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.user-container input::placeholder {
+  color: #ccc;
+  /* Adjust placeholder color if needed */
+}
+
+
+
+.user-container textarea {
+  width: 35rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  padding-right: 2rem;
+  /* Adjust this value based on the size of the icon */
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(105, 88, 202, 0.387);
+  backdrop-filter: blur(10px);
+  color: antiquewhite;
+  resize: none;
+  /* Prevent manual resizing */
+  overflow: hidden;
+  /* Hide overflow */
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.user-container textarea::placeholder {
+  color: #ccc;
+  /* Adjust placeholder color if needed */
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  /* Adjust this value based on the size of the icon */
+  top: 20%;
+  left: 75%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: antiquewhite;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(184, 176, 233, 0.387);
+  /* border: 1px solid; */
+  text-decoration: none;
+}
+
+.about a {
+  color: rgba(184, 176, 233, 0.387);
+  text-decoration: none;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+/* conversation containerrrrrrrrrrr */
+
+.chat-container {
+  /* border: 1px solid white; */
+  color: white;
+  position: relative;
+  top: 0%;
+  left: 10%;
+  height: 65vh;
+  overflow-y: auto;
+  width: 60rem;
+  margin: 1rem;
+}
+
+
+
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: rgba(105, 88, 202, 0.2);
+  border-radius: 10px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: rgba(105, 88, 202, 0.6);
+  border-radius: 10px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(105, 88, 202, 0.8);
+}
+
+.user-chat {
+  display: flex;
+  justify-content: flex-end;
+ 
+  font-size: large;
+  padding: 1rem;
+  margin: 1rem;
+
+  text-align: justify;
+  border-radius: 7px;
+  backdrop-filter: blur(10px);
+  height: auto;
+  background-color: rgba(184, 176, 233, 0.318);
+  
+
+}
+
+
+
+
+.ai-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
+  background-color: #3b3b3b21;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 7px;
+
+}
+
+.ai-container img {
+
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+
+.ai-container .reply {
+  font-size: large;
+  padding: 1rem;
+  text-align: justify;
+  border-radius: 7px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(184, 176, 233, 0.122);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  color: rgb(236, 217, 163);
+
+}
